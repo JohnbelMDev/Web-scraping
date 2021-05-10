@@ -27,9 +27,16 @@ function App() {
   console.log(showitems);
   return (
     <div className="App">
-      <ul>
-        {showitems}
-      </ul>
+<table id="customers">
+  <tr>
+    <th>Top 100 Salary</th>
+  </tr>
+  <tr>
+    <td>{showitems}</td>
+
+  </tr>
+</table>
+
     </div>
   );
 }
