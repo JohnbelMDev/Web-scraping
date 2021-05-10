@@ -1,7 +1,8 @@
-# Phillies-Baseball-R-D-Questionnaire
-Phillies Baseball R&amp;D Questionnaire answer for question B <h1> Step by step on how to install the program </h1>
-   ![Alt Text](https://raw.githubusercontent.com/JohnbelMDev/Phillies-Baseball-R-D-Questionnaire/main/step1.png)
-     <h2> Installation </h2>
+ <h1> Step by step on how to install the program </h1>
+            
+  ![Alt Text](https://raw.githubusercontent.com/JohnbelMDev/Phillies-Baseball-R-D-Questionnaire/main/step1.png)
+     
+<h2> Installation </h2>
       <ol>
   <li>Navigate to code to clone repo </li>
     <li>Click download Zip.  </li>
