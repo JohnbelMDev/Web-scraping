@@ -10,10 +10,15 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      // You can await here
+      // using await
+
       const result = await fetch(
-        'http://localhost:3100/showData',
-      );
+        'https://safe-basin-21320.herokuapp.com/showData', {
+        method: "GET",
+        headers: {
+            "Content-Type": "text/plain"
+        },
+    })
       const json = await result.json()
       setData(json);
       console.log(json);      // ...

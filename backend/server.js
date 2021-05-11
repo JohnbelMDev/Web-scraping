@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3100;
+const port = process.env.PORT ||  3100 ;
 const fetch = require('node-fetch')
 //require the file in order to use jquery
 const cheerio = require("cheerio");
@@ -51,9 +51,7 @@ app.get('/showData', async (req, res) => {
   let average = total / topSalaries.length
   // printing out the average
   console.log('average', average);
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-
-
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.json({
     topSalaries: topSalaries,
     average: average
@@ -65,6 +63,8 @@ app.get('/showData', async (req, res) => {
 
 
 
-
-
+// what i've tried
+// https://www.freecodecamp.org/news/access-control-allow-origin-header-explained/
+// https://stackoverflow.com/questions/42754388/uncaught-in-promise-typeerror-failed-to-fetch-and-cors-error
+// https://stackoverflow.com/questions/59526799/fetch-function-causing-a-resourse-blocked-by-cors
 app.listen(port, () => console.log(`listening on port ${port}`))
